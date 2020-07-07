@@ -22,7 +22,7 @@ Color[][] colorArray = new Color[WIDTH][HEIGHT];
 		//   colors[i][j] = new Color(i % 256, (i * j) % 256, j % 256);
 		for(int i = 0; i < colorArray.length; i++) {
 			for(int j = 0; j < colorArray[i].length; j++) {
-				 colorArray[i][j] = new Color(i % 256, (i * j) % 256, j % 256);
+				 colorArray[i][j] = new Color(i % 256, (i * j) % 256, j * i % 256);
 			}
 		}
 		//5. Come up with your own pattern to make a cool crazy image.
